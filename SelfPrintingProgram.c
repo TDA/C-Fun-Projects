@@ -6,18 +6,17 @@
 
 int main(int argc, char ** argv) {
     setbuf(stdout, NULL);
-    printf("hello world\n");
-    FILE* fp = fopen("/Users/schandramouli/ClionProjects/Fun-Projects/main.cpp", "r");
+    //printf("hello world\n");
+    // "/Users/schandramouli/ClionProjects/Fun-Projects/.cpp"
+    FILE* fp = fopen(, "r");
     if (fp == NULL) {
         printf("uh oh");
     }
     char str[2000];
     while (!feof(fp)) {
-        char * buff;
-        fscanf(fp, "%s", buff);
-        str += buff;
-        //fprintf(fp, "im here%s\n", str);
-        printf("at least here %s\n", str);
+        if(fgets(str, 1999, fp) != NULL) {
+            printf("%s", str);
+        }
     }
 
     fclose(fp);
