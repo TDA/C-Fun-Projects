@@ -7,8 +7,11 @@
 int main(int argc, char ** argv) {
     setbuf(stdout, NULL);
     //printf("hello world\n");
-    // "/Users/schandramouli/ClionProjects/Fun-Projects/.cpp"
-    FILE* fp = fopen(, "r");
+    printf("Enter the path to the file\n");
+    char path[1000];
+    scanf("%s", path);
+    // "/Users/schandramouli/ClionProjects/Fun-Projects/main.cpp"
+    FILE* fp = fopen(path, "r");
     if (fp == NULL) {
         printf("uh oh");
     }
