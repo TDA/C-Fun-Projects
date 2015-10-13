@@ -1,8 +1,5 @@
-#include <iostream>
+//
+// Created by Sai Prashanth Chandramouli on 10/13/15.
+//
 
-using namespace std;
-
-int main() {
-    cout << "Hello, World!" << endl;
-    return 0;
-}
+#include "main.h"
