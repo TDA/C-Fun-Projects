@@ -18,7 +18,7 @@ int main() {
     b = &c;
     a = &b;
 
-    printf("%s\t%s\t%s\t%s", a, b, c, d);
+    printf("%s\t%s\t%s\t%s", ***a, **b, *c, d);
 
     //*a = &c;
     //***a = d;
