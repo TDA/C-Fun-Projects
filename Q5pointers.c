@@ -16,11 +16,9 @@ int main() {
     printf("%d\t%d\t%d\t%d\n", a, b, c, d);
 
     d = 'd';
-    c = &d;
-    b = &c;
     a = &b;
 
-    printf("%c\t%c\t%c\t%c\n", ***a, **b, *c, d);
+    printf("%c\t%c\t%c\t%c\n", *a, b, c, d);
     printf("%d\t%d\t%d\t%d\n", a, b, c, d);
 
     *a = &c;
