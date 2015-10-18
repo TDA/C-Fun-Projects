@@ -7,7 +7,7 @@
 int main() {
     setbuf(stdout, NULL);
     int a = 5;
-    printf("%d\t%d\t%d\t%d\n", a, a--, --a, a);
+    printf("%d\t%d\t%d\t%d\n", a, a--, --a);
     a = 5;
     printf("%d\t%d\t%d\t%d\n", a, a++, ++a, a);
     return 0;
