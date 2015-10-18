@@ -14,4 +14,5 @@ int main() {
     printf("%d\n", c);
     c = (a, b);
     printf("%d\n", c);
+    return 0;
 }

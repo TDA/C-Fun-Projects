@@ -27,4 +27,5 @@ int main() {
 
     printf("%c\t%c\t%c\t%c\n", ***a, **b, *c, d);
     printf("%d\t%d\t%d\t%d\n", a, b, c, d);
+    return 0;
 }
