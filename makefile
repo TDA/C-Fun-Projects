@@ -9,3 +9,9 @@ val:
 
 clean:
 	rm -rf $(1).out*
+
+git:
+	make clean $(1)
+	git s
+	git a
+	git c "Some random git push"
