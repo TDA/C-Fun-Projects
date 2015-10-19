@@ -9,6 +9,7 @@ val:
 
 clean:
 	rm -rf $(1).out*
+	rm -rf $(1).dSYM*
 
 git:
 	make clean $(1)
